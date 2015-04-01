@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Register</title>
+    <meta name="description" content="PSD to HTML5+CSS3 conversion.">
+    <meta name="keywords" content="PSD, HTML5, CSS3">
+    <meta name="author" content="Erwin Kaddy">
+
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.jpg">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.jpg">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.jpg">
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/font-lineicons.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/animate.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/toastr.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" />
+    
+    <!--[if lt IE 9]>
+        <script src="assets/js/html5.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+    
+
+</head>
+
+<body id="register-page">
+    <header>
+        <nav class="navigation navigation-header">
+            <div class="container">
+                <div class="navigation-brand">
+                    <div class="brand-logo">
+						<a href="index.html" class="logo"></a>
+						<span class="sr-only">startup.ly</span>
+                    </div>
+                   <!-- <button class="navigation-toggle visible-xs" type="button" data-toggle="dropdown" data-target=".navigation-navbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>-->
+                </div>
+                <div class="navigation-navbar">
+                    <!--<ul class="navigation-bar navigation-bar-left">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#features">Features</a></li>
+						<li><a href="#product">Prices</a></li>
+                        <li><a href="#feedback">Feedback</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#footer">Contacts</a></li>
+                    </ul>-->
+                    <!--<ul class="navigation-bar navigation-bar-right">
+                        <li><a href="register.html">Login</a></li>
+                        <li class="featured"><a href="register.html">Sign up</a></li>
+                    </ul>-->  
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div id="hero" class="static-header light">
+        <div class="text-heading">
+            <h1>Take advantage of <span class="highlight">Discounted</span> registration.</h1>
+            <p>Registration <strong>now open</strong>.<br>
+              Testing begins by <strong>March 31, 2015</strong>.</p>
+            <p>&nbsp;</p>
+        </div>
+        
+        <!--
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                    <form class="form form-register dark" id="registration" method="post" action="signup.php">
+                        <div class="form-group">
+                            <label for="fullname" class="col-sm-3 col-xs-12 control-label">Full name</label>
+                            <div class="col-sm-9 col-xs-12">
+                                <input type="text" class="form-control required" name="fullname" id="fullname" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="website" class="col-sm-3 col-xs-12 control-label">Site address</label>
+                            <div class="col-sm-9 col-xs-12">
+                                <input type="text" class="form-control" name="website" id="website" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="col-sm-3 col-xs-12 control-label">Email address</label>
+                            <div class="col-sm-9 col-xs-12">
+                                <input type="email" class="form-control required email" name="email" id="email" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="col-sm-3 col-xs-12 control-label">Password</label>
+                            <div class="col-sm-9 col-xs-12">
+                                <input type="password" class="form-control required" name="password" id="password" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword" class="col-sm-3 col-xs-12 control-label">Password</label>
+                            <div class="col-sm-9 col-xs-12">
+                                <input type="password" class="form-control required" name="confirmPassword" id="confirmPassword" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="newsletter" value="1"> Submit to the monthly newsletter
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Get started</button>
+                    </form>
+                    
+                    <p class="agree-text">By clicking you agree to our Terms of Service, Privacy Policy & Refund Policy.<br />
+                    I have a referral code I'd like to enter</p>
+                </div>
+            </div>
+        </div>
+        -->
+        <section id="guarantee" class="long-block light">
+        <div class="container">
+            <div class="col-md-12 col-lg-12">
+				<i class="icon icon-seo-icons-24 pull-left"></i>
+                <article class="center">
+                    <h2><strong>Thanks for registering!</strong></h2>
+                    <p class="thin">We'll let you know when online testing is live.</p>
+                </article>
+            </div>
+			
+            <div class="col-md-12 col-lg-12">
+            
+            <!-- Begin MailChimp Signup Form -->
+<!--<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="//documentingforce.us9.list-manage.com/subscribe/post?u=b334ce0c7b73be98f91a8624d&amp;id=fa7545a815" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+<div class="mc-field-group">
+	<label for="mce-FNAME">First Name  <span class="asterisk">*</span>
+</label>
+	<input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+</div>
+<div class="mc-field-group">
+	<label for="mce-LNAME">Last Name  <span class="asterisk">*</span>
+</label>
+	<input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+</div>
+<div class="mc-field-group">
+	<label for="mce-MMERGE3">Law Enforcement Agency  <span class="asterisk">*</span>
+</label>
+	<input type="text" value="" name="MMERGE3" class="required" id="mce-MMERGE3">
+</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>   
+    <div style="position: absolute; left: -5000px;"><input type="text" name="b_b334ce0c7b73be98f91a8624d_fa7545a815" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Signup" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default"></div>
+    </div>
+</form> 
+
+
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>-->
+<!--End mc_embed_signup-->
+
+
+            
+                <!--<a href="index.html#process" class="btn btn-default">Signup</a>-->
+                
+              
+          </div>
+        </div>
+    </section>
+        <section id="sc-table" class="section dark">
+          <div class="container">
+            <div class="section-header animated hiding" data-animation="fadeInDown">
+                <h2>When do I pay?<span class="highlight"></span></h2>
+                <div class="col-sm-12">Signup now and when testing goes live we'll send you an email with instructions for logging in and taking the test. When you log in to take the test, you'll pay based on the pricing schedule below. For example: signup in February and pay $19, wait until March, it will cost $29 and so on.<br>
+                  <br>
+                <br>
+                </div>
+            </div>
+                    <h3 class="text-center">PRICING SCHEDULE*</h3>
+                    <table class="table table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th>REGISTER IN</th>
+                                <th>Discount</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>FEBRUARY</td>
+                                <td><span class="highlight">83% OFF</span> if you register in February '15</td>
+                                <td><strong>$19</strong></td>
+                            </tr>
+                            <tr>
+                                <td>MARCH</td>
+                                <td><span class="highlight">73% OFF</span> if you register in March '15</td>
+                                <td><strong>$29</strong></td>
+                            </tr>
+                            <tr>
+                                <td>APRIL</td>
+                                <td><span class="highlight">64% OFF</span> if you register in April '15</td>
+                                <td><strong>$39</strong></td>
+                            </tr>
+                            <tr>
+                                <td>MAY</td>
+                                <td><span class="highlight">55% OFF</span> if you register in May '15</td>
+                                <td><strong>$49</strong></td>
+                            </tr>
+                            <tr>
+                                <td>JUNE</td>
+                                <td><span class="highlight">46% OFF</span> if you register in June '15</td>
+                                <td><strong>$59</strong></td>
+                            </tr>
+                            <tr>
+                                <td>After JUNE</td>
+                                <td><span class="highlight">Full Price</span> July 1, 2015 and after</td>
+                                <td><strong>$109</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p> <small style="color:#999999">*Prices subject to change without notice</small></p>
+            </div>
+        </section>
+    </div>
+    <div id="clients">
+        <div class="container">
+        <h4>Documenting Force is being used by hundreds of agencies including:</h4>
+            <ul class="list-inline logos">
+                <li><img src="assets/img/logos/patches/1.png" alt="US Supreme Court Police" /></li>
+                <li><img src="assets/img/logos/patches/2.png" alt="Department of Defense" /></li>
+                <li><img src="assets/img/logos/patches/3.png" alt="Arahapoe County, CO Sheriff" /></li>
+                <li><img src="assets/img/logos/patches/4.png" alt="North Carolina Highway Patrol" /></li>
+                <li><img src="assets/img/logos/patches/5.png" alt="New Orleans, LA Police" /></li>
+                <li><img src="assets/img/logos/patches/6.png" alt="Belhaven, NC Police" /></li>
+                <li><img src="assets/img/logos/patches/7.png" alt="Aiken, SC Police" /></li>
+                <li><img src="assets/img/logos/patches/8.png" alt="Charleston, SC Police" /></li>
+                <li><img src="assets/img/logos/patches/9.png" alt="St Bernard Parash, LA Sheriff" /></li>
+                <li><img src="assets/img/logos/patches/10.png" alt="Berwin, IL Police" /></li>
+                <li><img src="assets/img/logos/patches/11.png" alt="Bayou La Batre Police" /></li>
+                <li><img src="assets/img/logos/patches/12.png" alt="Alabama Highway Patrol" /></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="back-to-top"><i class="fa fa-angle-up fa-3x"></i></div>
+    
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="assets/js/jquery-1.11.0.min.js?ver=1"></script>
+    <![endif]-->  
+    <!--[if (gte IE 9) | (!IE)]><!-->  
+        <script type="text/javascript" src="assets/js/jquery-2.1.0.min.js?ver=1"></script>
+    <!--<![endif]-->  
+    
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.nav.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.appear.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.plugin.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.countdown.js"></script>
+    <script type="text/javascript" src="assets/js/waypoints.min.js"></script>
+    <script type="text/javascript" src="assets/js/waypoints-sticky.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.validate.js"></script>
+    <script type="text/javascript" src="assets/js/toastr.min.js"></script>
+    <script type="text/javascript" src="assets/js/headhesive.min.js"></script>
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+	    <script>
+			var today, text, J,F,Mh,A,My,Jn,Jy,formval;
+			today = new Date();
+			console.log(today.getMonth())
+			var d = new Date()
+			console.log(d.getMonth())
+			
+			
+			
+			if (today.getMonth() == 0) {
+			    text = "$0 for "+ (32-d.getDate()) +" more days";
+				formval = 0
+			}
+			if (today.getMonth() == 1) {
+			    text = "$19 for "+ (29-d.getDate()) +" more days";
+				formval = 19
+			}
+			if (today.getMonth() == 2) {
+			    text = "$29 for "+ (32-d.getDate()) +" more days";
+				formval = 29
+			}
+			if (today.getMonth() == 3) {
+			    text = "$39 for "+ (31-d.getDate()) +" more days";
+				formval = 39
+			}
+			if (today.getMonth() == 4) {
+			    text = "$49 for "+ (32-d.getDate()) +" more days";
+				formval = 49
+			}
+			if (today.getMonth() == 5) {
+			    text = "$59 for "+ (31-d.getDate()) +" more days";
+				formval = 59
+			}
+			if (today.getMonth() >= 6) {
+			    text = "$109";
+				formval = 109
+			} 
+			console.log(text,formval)
+			document.getElementById("demo").innerHTML = text;
+			document.getElementById("pricing").value = formval;
+		</script>
+        <script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-59341812-1', 'auto');
+		  ga('send', 'pageview');
+		
+		</script>
+</body>
+</html>

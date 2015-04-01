@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" />
+<script type="text/javascript" src="assets/js/jquery-2.1.0.min.js?ver=1"></script>
+<script>
+function getCookie(cname) {
+			var name = cname + "=";
+			var ca = document.cookie.split(';');
+			for(var i=0; i<ca.length; i++) {
+				var c = ca[i];
+				while (c.charAt(0)==' ') c = c.substring(1);
+				if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+			}
+			return "";
+		}
+
+
+var cookieData
+playedData = getCookie("played");
+noteData = getCookie("notes");
+timerData = getCookie("timer");
+reportData = getCookie("report");
+
+//alert("played="+playedData+", notes="+noteData)
+
+$(function () {
+	$('#clear').click(function () {
+		document.cookie = "played=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+		document.cookie = "notes=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+		document.cookie = "timer=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+		document.cookie = "report=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+	});
+});
+
+
+</script>
+</head>
+
+<body>
+<div id="clear"><a href="">CLEAR COOKIES</a></div>
+<div id="status"></div>
+<script>
+	document.getElementById("status").innerHTML = "played="+playedData+"</br> timer="+timerData+"</br> notes="+noteData+"</br> report="+reportData
+
+</script>
+</body>
+</html>

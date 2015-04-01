@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Instructions</title>
+    <meta name="description" content="PSD to HTML5+CSS3 conversion.">
+    <meta name="keywords" content="PSD, HTML5, CSS3">
+    <meta name="author" content="Erwin Kaddy">
+
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.jpg">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.jpg">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.jpg">
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/font-lineicons.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/animate.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/toastr.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" />
+    
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="assets/js/jquery-1.11.0.min.js?ver=1"></script>
+    <![endif]-->  
+    <!--[if (gte IE 9) | (!IE)]><!-->  
+        <script type="text/javascript" src="assets/js/jquery-2.1.0.min.js?ver=1"></script>
+    <!--<![endif]-->  
+    
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.nav.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.appear.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.plugin.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.countdown.js"></script>
+    <script type="text/javascript" src="assets/js/waypoints.min.js"></script>
+    <script type="text/javascript" src="assets/js/waypoints-sticky.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.validate.js"></script>
+    <script type="text/javascript" src="assets/js/toastr.min.js"></script>
+    <script type="text/javascript" src="assets/js/headhesive.min.js"></script>
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+    
+    <!--[if lt IE 9]>
+        <script src="assets/js/html5.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+    
+    <script type="text/javascript">
+	
+	
+	 
+    $(document).ready(function(){
+    	//$('#replaybutton').hide();
+		//checkCookie()
+		reloadNotes()
+		reloadReport()
+	});
+    </script>
+
+</head>
+
+<body id="register-page" >
+    <header>
+        <nav class="navigation navigation-header">
+            <div class="container">
+                <div class="navigation-brand">
+                    <div class="brand-logo">
+						<a href="index.html" class="logo"></a>
+						<span class="sr-only">Documenting Force</span>
+                    </div>
+                   <!-- <button class="navigation-toggle visible-xs" type="button" data-toggle="dropdown" data-target=".navigation-navbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>-->
+                </div>
+                 <!--<div class="navigation-navbar">
+                   <ul class="navigation-bar navigation-bar-left">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#features">Features</a></li>
+						<li><a href="#product">Prices</a></li>
+                        <li><a href="#feedback">Feedback</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#footer">Contacts</a></li>
+                    </ul>-->
+                    <!--<ul class="navigation-bar navigation-bar-right">
+                        <li><a href="register.html">Login</a></li>
+                        <li class="featured"><a href="register.html">Sign up</a></li>
+                    </ul> 
+                </div>--> 
+            </div>
+        </nav>
+    </header>
+    
+    <!--<div id="hero" class="static-header light" style="height:500; overflow:hiden;">-->
+    
+    
+       <!-- <div class="text-heading">
+          <h1>Step 2: Instructions</h1>
+          
+            <p>&nbsp;</p>
+        </div>
+        -->
+        <!--
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                    <form class="form form-register dark" id="registration" method="post" action="signup.php">
+                        <div class="form-group">
+                            <label for="fullname" class="col-sm-3 col-xs-12 control-label">Full name</label>
+                            <div class="col-sm-9 col-xs-12">
+                                <input type="text" class="form-control required" name="fullname" id="fullname" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="website" class="col-sm-3 col-xs-12 control-label">Site address</label>
+                            <div class="col-sm-9 col-xs-12">
+                                <input type="text" class="form-control" name="website" id="website" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="col-sm-3 col-xs-12 control-label">Email address</label>
+                            <div class="col-sm-9 col-xs-12">
+                                <input type="email" class="form-control required email" name="email" id="email" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="col-sm-3 col-xs-12 control-label">Password</label>
+                            <div class="col-sm-9 col-xs-12">
+                                <input type="password" class="form-control required" name="password" id="password" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword" class="col-sm-3 col-xs-12 control-label">Password</label>
+                            <div class="col-sm-9 col-xs-12">
+                                <input type="password" class="form-control required" name="confirmPassword" id="confirmPassword" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="newsletter" value="1"> Submit to the monthly newsletter
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Get started</button>
+                    </form>
+                    
+                    <p class="agree-text">By clicking you agree to our Terms of Service, Privacy Policy & Refund Policy.<br />
+                    I have a referral code I'd like to enter</p>
+                </div>
+            </div>
+        </div>
+        -->
+        <section id="guarantee" class="long-block light">
+        <div class="container">
+            <div class="col-md-12 col-lg-12" style="height:36px;">
+				<!--<i class="icon icon-multimedia-08 pull-right"></i>
+                <article class="center" style="margin-top:20px;">
+                  <h3 class="thin" >Practice assessment.</h3>
+                  
+                </article>-->
+            </div>
+			
+            <div class="col-md-12 col-lg-12">
+           
+          </div>
+        </div>
+    </section>
+    <section id="sc-table" class="section dark" style="padding:10px;">
+          <div class="container">
+          <div id="testcontainer" >
+          <div class="alert alert-info" style="border-radius:8px">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        Your notes are not editable. You have <strong>3 minutes</strong> to complete your <strong> practice</strong> report.
+                  <i class="icon icon-alerts-18"></i>
+                    </div>
+          	<div id="notepanel">
+            	
+                <h6>Notes</h6>
+                <!--
+                <input id="changeColor" type="button" value="CROSSOUT" class="btn-sm"/>
+
+                <input id="striketoggle" type="button" value="Show/Hide" class="btn-sm"/>
+                
+                <br />-->
+                <div id="textinputarea" contenteditable="false" style="opacity:0.5;"></div>
+                <!--
+                <a href="#" class="btn-sm" style="background-color:#666666; color:#fcfcfc;"> SAVE </a> 
+                <div id="log">Log area</div>-->
+          
+          </div>
+          
+          <div id="reportpanel">
+         <div id="timer">--:--</div>
+         <div id="editbuttons">
+         		
+                <input id="changeColor" type="button" value="CROSSOUT" class="btn-sm"/>&nbsp;
+                <input id="striketoggle" type="button" value="Show/Hide" class="btn-sm"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                <input id="submit" type="button" value="SUBMIT REPORT" class="btn-sm"/>
+                </div>
+                <div id="reportentryarea"></div>
+          </div>  
+		</div>
+      </div>
+     </section>  
+    
+    <!--<div id="clients">
+        <div class="container">
+        <h4>Documenting Force is being used by hundreds of agencies including:</h4>
+            <ul class="list-inline logos">
+                <li><img src="assets/img/logos/patches/1.png" alt="US Supreme Court Police" /></li>
+                <li><img src="assets/img/logos/patches/2.png" alt="Department of Defense" /></li>
+                <li><img src="assets/img/logos/patches/3.png" alt="Arahapoe County, CO Sheriff" /></li>
+                <li><img src="assets/img/logos/patches/4.png" alt="North Carolina Highway Patrol" /></li>
+                <li><img src="assets/img/logos/patches/5.png" alt="New Orleans, LA Police" /></li>
+                <li><img src="assets/img/logos/patches/6.png" alt="Belhaven, NC Police" /></li>
+                <li><img src="assets/img/logos/patches/7.png" alt="Aiken, SC Police" /></li>
+                <li><img src="assets/img/logos/patches/8.png" alt="Charleston, SC Police" /></li>
+                <li><img src="assets/img/logos/patches/9.png" alt="St Bernard Parash, LA Sheriff" /></li>
+                <li><img src="assets/img/logos/patches/10.png" alt="Berwin, IL Police" /></li>
+                <li><img src="assets/img/logos/patches/11.png" alt="Bayou La Batre Police" /></li>
+                <li><img src="assets/img/logos/patches/12.png" alt="Alabama Highway Patrol" /></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="back-to-top"><i class="fa fa-angle-up fa-3x"></i></div>
+    
+    
+	  </div>  -->
+        <script>
+		/*
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-59341812-1', 'auto');
+		  ga('send', 'pageview');
+		*/
+		</script>
+         <script>
+			function setCookie(cname, cvalue, exdays) {
+				var d = new Date();
+				d.setTime(d.getTime() + (exdays*24*60*60*1000));
+				var expires = "expires="+d.toUTCString();
+				document.cookie = cname + "=" + cvalue + "; " + expires;
+			}
+			
+			function getCookie(cname) {
+				var name = cname + "=";
+				var ca = document.cookie.split(';');
+				for(var i=0; i<ca.length; i++) {
+					var c = ca[i];
+					while (c.charAt(0)==' ') c = c.substring(1);
+					if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+				}
+				return "";
+			}
+			
+			</script>
+        <script>
+			var e
+			var logtext, entrytext, notestring, statictext
+			var entrystring
+			var lastspace;
+			var strikethroughvisible = 1
+			var stilleditable = true
+			
+				function selectHTML() {
+					try {
+						if (window.ActiveXObject) {
+							var c = document.selection.createRange();
+							return c.htmlText;
+						}
+			
+						var nNd = document.createElement("crossout");
+						var w = getSelection().getRangeAt(0);
+						w.surroundContents(nNd);
+						return nNd.innerHTML;
+					} catch (e) {
+						if (window.ActiveXObject) {
+							return document.selection.createRange();
+						} else {
+							return getSelection();
+						}
+					}
+					saveReport();
+				}
+			
+				function deleteLast(deleteword) {
+					$("#log").html("need to strike through" + deleteword);
+					console.log(entrystring);
+					var keepstr = entrystring.substring(0, entrystring.lastIndexOf(" "));
+					var delstr = entrystring.substring(entrystring.lastIndexOf(deleteword));
+					console.log(keepstr);
+					console.log(delstr);
+					entrytext = keepstr + "<crossout>" + delstr + "</crossout>";
+					//alert(entrytext);
+					console.log("1: "+entrytext);
+					$("#reportentryarea").html(entrytext);
+					strikeIt();
+					
+					
+			
+				}
+			
+			$(function () {
+				$('#changeColor').click(function () {
+					var mytext = selectHTML();
+					console.log("Strike: "+mytext)
+					strikeIt()
+					
+					
+				});
+			});
+			$(function(){
+				$('#submit').click(function () {
+					alert("Save and submit report")
+				});
+			})
+			function strikeIt() {
+				$('crossout').addClass("showstrike");
+				
+				/*$('crossout').css({
+					"visibility": "visible",
+						"text-decoration": "line-through",
+						"color": "#999999"
+				});*/
+				var strikethroughvisible = 1
+				console.log("2: "+entrytext);
+				saveReport();
+			}
+			
+			function hideIt() {
+				$('crossout').removeClass("showstrike");
+				$('crossout').addClass("hidestrike");
+				/*$('crossout').css({
+					"visibility": "hidden",
+					"max-width":"1px"
+				});*/
+			}
+			
+			function showIt() {
+				$('crossout').addClass("showstrike");
+				/*$('crossout').css({
+					"visibility": "visible"
+				});*/
+				
+			}
+			
+			function createParagraph() {
+				$("#reportentryarea").html(entrytext + "<br/>");
+				saveReport()
+			}
+			
+			$(function () {
+				$('#striketoggle').click(function () {
+					//console.log(strikethroughvisible)
+					if (strikethroughvisible == 1) {
+						hideIt()
+						strikethroughvisible = 0
+					} else {
+						showIt()
+						strikethroughvisible = 1
+					}
+			
+				});
+			});
+			
+			
+			function reloadNotes(){
+				statictext = getCookie("notes").split("||").join(",");
+				//console.log("LOAD: "+entrytext);
+				$("#textinputarea").html(statictext)
+				//saveNotes();
+			}
+			function reloadReport(){
+				entrytext = getCookie("report").split("||").join(",");
+				//console.log("LOAD: "+entrytext);
+				$("#reportentryarea").html(entrytext)
+				//saveNotes();
+			}
+			function saveReport(){
+				entrytext = $("#reportentryarea").html();
+				//console.log("GET: "+entrytext);
+				entrystring = entrytext.toString();
+				//console.log("CONVERT: "+entrystring);
+				notestring = entrystring.split(",").join("||");
+				//console.log("SAVE: "+notestring);
+				setCookie("report", notestring, 365);
+				reloadReport()
+				
+				
+			}
+			
+			$(document).bind('keypress', function (e) {
+			 if(stilleditable){
+				var keycode = (e.keyCode ? e.keyCode : e.which);
+				//console.log("Key" + keycode);
+				entrytext = $("#reportentryarea").html()  + String.fromCharCode(keycode)
+				$("#reportentryarea").html(entrytext);
+			
+				logtext = keycode
+				//$("#log").html(keycode)
+				entrystring = entrytext.toString()
+				lastspace = entrystring.substring(entrystring.lastIndexOf(" "));
+				
+				saveReport()
+				
+				if (keycode == 8) {
+					//$("#log").html("DELETE")
+					//alert("You cannot use the delete or backspace key");
+					//return false;
+					
+					deleteLast(lastspace)
+					
+			
+				}
+				if (keycode == 13) {
+					//$("#log").html("ENTER")
+					createParagraph()
+					
+			
+				}
+				
+				if (keycode == 32) {
+					//$("#log").html("ENTER")
+					//createParagraph()
+					//alert("spacebar")
+					$("#reportentryarea").html(entrytext + " ");
+					//saveNotes();
+					//return false;
+					
+			
+				}
+				
+			 }
+			
+			});
+            
+			</script>
+            <script>
+                //Time remaining: 60:00
+				var tSeconds, dMins, dSecs, blinkToggle
+				blinkToggle = 0
+				var timer=getCookie("timer");
+				if (timer!="") {
+					tSeconds = timer
+				}else{
+					tSeconds = 180
+				}
+				var myInt = setInterval(function(){ myTimer() }, 1000);
+				function myTimer() {
+					tSeconds--
+					dMins = Math.floor(tSeconds/60)
+					dSecs = tSeconds - dMins * 60;
+					if (tSeconds<1){
+						stopInterval()
+					}
+					
+					if (dSecs <10){
+						dSecs = "0"+dSecs;
+					}
+					
+					if (tSeconds < 60){
+						//console.log("<60: Blinktoggle="+blinkToggle)
+						if (blinkToggle == 0){
+							$("#timer").animate({backgroundColor: "#666666"},250);
+							blinkToggle = 1;
+						}else{
+							$("#timer").animate({backgroundColor: "#B80F12"},250);
+							//document.getElementById("timer").setAttribute("style","background-color:#666666");
+							blinkToggle = 0;
+						}
+					}else if (tSeconds < 120){
+						document.getElementById("timer").setAttribute("style","background-color:#B80F12")
+						//$("#timer").animate({backgroundColor: "#B80F12"},2500);
+						//console.log("<120 && >60")
+						
+					}
+					document.getElementById("timer").innerHTML = dMins+":"+dSecs
+					saveTimer()
+				}
+				$("#timer").animate({backgroundColor: "#666666"},500);
+				//document.getElementById("timer").setAttribute("style","background-color:#666666");
+				function saveTimer(){
+					setCookie("timer", tSeconds, 365);
+					//console.log("SavedTime: "+tSeconds)
+				}
+				function stopInterval(){
+					clearInterval(myInt);
+					stilleditable = false;
+					$('#changeColor').hide();
+					$('#striketoggle').hide();
+				}
+			</script>
+           
+            
+</body>
+</html>
